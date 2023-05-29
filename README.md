@@ -1,4 +1,4 @@
-# :chat_bot: ChatBot FOOD Wheel App
+# ChatBot FOOD Wheel App
 
 ## :package: Packages
 
