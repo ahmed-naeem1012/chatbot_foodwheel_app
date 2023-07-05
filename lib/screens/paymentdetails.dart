@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
-import 'package:recipe_app/screens/chatscreen.dart';
+import 'package:food_wheels/screens/chatscreen.dart';
 
 class CreditCardPage extends StatefulWidget {
   const CreditCardPage({Key? key}) : super(key: key);

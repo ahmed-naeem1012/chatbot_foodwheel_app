@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/models/food.dart';
+import 'package:food_wheels/models/food.dart';
 
 class ListOfRecipes with ChangeNotifier {
   final List<Recipe> _recipes = [

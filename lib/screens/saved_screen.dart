@@ -1,10 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:food_wheels/custom_navbar.dart';
+import 'package:food_wheels/provider/saved_provider.dart';
+import 'package:food_wheels/widgets/network_image.dart';
+import 'package:food_wheels/widgets/tab_row.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe_app/custom_navbar.dart';
-import 'package:recipe_app/provider/provider.dart';
-import 'package:recipe_app/widgets/widgets.dart';
+
 import 'package:sizer/sizer.dart';
 import 'package:unicons/unicons.dart';
 

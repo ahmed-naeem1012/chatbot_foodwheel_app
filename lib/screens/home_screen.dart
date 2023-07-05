@@ -1,13 +1,16 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:food_wheels/provider/recipe_provider.dart';
+import 'package:food_wheels/utils/category_list.dart';
+import 'package:food_wheels/utils/icon_list.dart';
+import 'package:food_wheels/widgets/network_image.dart';
+import 'package:food_wheels/widgets/profile_image.dart';
+import 'package:food_wheels/widgets/rich_text.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe_app/provider/provider.dart';
 import 'package:unicons/unicons.dart';
 import '../widgets/drawer.dart';
 import 'screens.dart';
-import 'package:recipe_app/utils/utils.dart';
-import 'package:recipe_app/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

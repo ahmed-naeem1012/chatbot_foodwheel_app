@@ -1,6 +1,6 @@
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:flutter/material.dart';
-import 'package:recipe_app/screens/messages.dart';
+import 'package:food_wheels/screens/messages.dart';
 
 class Chat_Screen extends StatefulWidget {
   const Chat_Screen({Key? key}) : super(key: key);

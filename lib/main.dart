@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:food_wheels/auth/signup.dart';
+import 'package:food_wheels/custom_theme.dart';
+import 'package:food_wheels/provider/provider.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe_app/auth/signup.dart';
-import 'package:recipe_app/provider/provider.dart';
-import 'package:recipe_app/custom_theme.dart';
+
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -19,7 +20,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {

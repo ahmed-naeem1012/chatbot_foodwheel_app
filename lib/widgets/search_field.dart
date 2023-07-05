@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use, unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:food_wheels/provider/recipe_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe_app/provider/recipe_provider.dart';
 import 'package:unicons/unicons.dart';
 
 class SearchField extends StatefulWidget {

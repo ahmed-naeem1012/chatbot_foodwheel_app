@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/screens/screens.dart';
+import 'package:food_wheels/screens/category_screen.dart';
+import 'package:food_wheels/screens/home_screen.dart';
+import 'package:food_wheels/screens/profile_screen.dart';
+import 'package:food_wheels/screens/saved_screen.dart';
 import 'package:sizer/sizer.dart';
 import 'package:unicons/unicons.dart';
 

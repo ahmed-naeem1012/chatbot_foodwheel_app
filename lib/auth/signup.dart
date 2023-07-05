@@ -2,9 +2,10 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:food_wheels/auth/signin.dart';
+import 'package:food_wheels/custom_navbar.dart';
 import 'package:http/http.dart' as http;
-import 'package:recipe_app/auth/signin.dart';
-import 'package:recipe_app/custom_navbar.dart';
 
 class MyRegister extends StatefulWidget {
   const MyRegister({Key? key}) : super(key: key);
@@ -23,7 +24,6 @@ class _MyRegisterState extends State<MyRegister> {
     setState(() {
       _isLoading = true;
     });
-
     const String url = 'https://reqres.in/api/register';
     final Map<String, String> headers = {'Content-Type': 'application/json'};
     final Map<String, dynamic> body = {
@@ -36,8 +36,7 @@ class _MyRegisterState extends State<MyRegister> {
           headers: headers, body: json.encode(body));
       if (response.statusCode == 200) {
         final responseData = json.decode(response.body);
-        // Get.to(() => MainPage());
-        // Get.to(() => MyLogin());
+
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const CustomNavBar()),
@@ -46,6 +45,7 @@ class _MyRegisterState extends State<MyRegister> {
         print('Token: ${responseData['token']}');
       } else {
         print('Signup failed. Error code: ${response.statusCode}');
+        Fluttertoast.showToast(msg: 'Please Enter Valid Credentials');
       }
     } catch (e) {
       print('Exception occurred during signup: $e');

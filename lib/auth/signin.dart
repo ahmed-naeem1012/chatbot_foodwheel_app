@@ -2,9 +2,10 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:food_wheels/auth/signup.dart';
+import 'package:food_wheels/custom_navbar.dart';
 import 'package:http/http.dart' as http;
-import 'package:recipe_app/auth/signup.dart';
-import 'package:recipe_app/custom_navbar.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -17,7 +18,6 @@ class _MyLoginState extends State<MyLogin> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool _isLoading = false;
-
   Future<void> _login() async {
     setState(() {
       _isLoading = true;
@@ -39,15 +39,12 @@ class _MyLoginState extends State<MyLogin> {
           context,
           MaterialPageRoute(builder: (context) => const CustomNavBar()),
         );
-        // Successful login
-        // Do something here (e.g., navigate to the next screen)
-        // Get.to(() => MainPage());
+
         print('Login successful!');
         print('Token: ${responseData['token']}');
       } else {
-        // Error occurred during login
-        // Handle the error here (e.g., show an error message)
         print('Login failed. Error code: ${response.statusCode}');
+        Fluttertoast.showToast(msg: 'Please Enter Valid Credentials');
       }
     } catch (e) {
       print('Exception occurred during login: $e');
