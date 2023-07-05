@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/models/saved_recipes.dart';
+import 'package:food_wheels/models/saved_recipes.dart';
 
 class SavedProvider with ChangeNotifier {
   final Map<String, SavedRecipes> _list = {};

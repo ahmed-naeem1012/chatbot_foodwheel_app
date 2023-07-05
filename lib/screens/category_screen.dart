@@ -1,9 +1,9 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:food_wheels/utils/category_list.dart';
+import 'package:food_wheels/widgets/network_image.dart';
 import 'screens.dart';
-import 'package:recipe_app/utils/utils.dart';
-import 'package:recipe_app/widgets/widgets.dart';
 
 class CategoryScreen extends StatelessWidget {
   const CategoryScreen({Key? key}) : super(key: key);

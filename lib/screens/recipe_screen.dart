@@ -2,9 +2,11 @@
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:food_wheels/models/food.dart';
+import 'package:food_wheels/provider/saved_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:recipe_app/models/models.dart';
-import 'package:recipe_app/provider/provider.dart';
+
 import 'package:unicons/unicons.dart';
 
 class RecipeScreen extends StatelessWidget {
@@ -125,17 +127,28 @@ class RecipeAbout extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline4,
                 ),
                 Row(
-                  children: const [
-                    Icon(
-                      UniconsLine.share,
-                      size: 26.0,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Fluttertoast.showToast(msg: 'Feature Coming Soon');
+                      },
+                      child: Icon(
+                        UniconsLine.share,
+                        size: 26.0,
+                      ),
                     ),
                     SizedBox(
                       width: 5.0,
                     ),
-                    Icon(
-                      UniconsLine.bookmark,
-                      size: 26.0,
+                    GestureDetector(
+                      onTap: () {
+                        Fluttertoast.showToast(
+                            msg: 'Add Favourites from Category Section');
+                      },
+                      child: Icon(
+                        UniconsLine.plus,
+                        size: 26.0,
+                      ),
                     )
                   ],
                 )

@@ -1,11 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:recipe_app/auth/signin.dart';
-import 'package:recipe_app/screens/screens.dart';
+import 'package:food_wheels/auth/signin.dart';
+import 'package:food_wheels/screens/screens.dart';
+import 'package:food_wheels/widgets/profile_image.dart';
+
 import 'package:sizer/sizer.dart';
 import 'package:unicons/unicons.dart';
-import 'package:recipe_app/widgets/widgets.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);

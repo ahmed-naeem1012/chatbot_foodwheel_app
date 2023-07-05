@@ -1,4 +1,4 @@
-import 'package:recipe_app/models/models.dart';
+import 'package:food_wheels/models/icon.dart';
 
 List<IconModel> iconList = [
   IconModel(icon: 'assets/coffee.png', text: 'Breakfast'),
